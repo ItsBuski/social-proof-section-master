@@ -1,0 +1,193 @@
+:root 
+{
+    /* Primary */
+    
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    
+    /* Neutral */
+    
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+     /* Typography
+    
+    ### Body Copy
+    
+    - Font size: 15px
+    */
+
+    /* Font
+    - Family: [League Spartan](https://fonts.google.com/specimen/League+Spartan)
+    - Weights: 400, 500, 700
+    */
+
+    /* Mobile: 375px
+    Desktop: 1440px */
+
+
+body
+{
+    font-family: 'League Spartan';
+}
+
+.box0
+{
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.box05
+{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 5rem 0rem;
+    
+}
+
+.box1
+{
+
+    display: flex;
+    flex-direction: column;
+    color: var(--Very-Dark-Magenta);
+    margin: 0rem 10rem;
+    
+}
+.box1 h1
+{
+    font-size: 4rem;
+    font-weight: 700;
+}
+.box1 p
+{
+    font-size: 1.5rem;
+}
+
+.box2 
+{
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-right: 5rem;
+
+}
+.onestar, .twostar, .threestar
+{
+
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    background-color: var(--Light-Grayish-Magenta);
+    border-radius: 10px;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--Very-Dark-Magenta);
+    padding: 0rem 1rem;
+}
+.onestar
+{
+
+    margin-top: 4rem;
+    margin-right: 24rem;
+
+}
+.twostar
+{
+    margin-left: 2rem;
+    margin-right: 18rem;
+}
+
+.threestar
+{
+    margin-left: 4rem;
+    margin-right: 14rem;
+}
+
+.box3
+{
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 8rem;
+}
+
+.box3inside1, .box3inside2, .box3inside3
+{
+    background-color: var(--Very-Dark-Magenta);
+    color: var(--White);
+    padding: 1rem;
+    border-radius: 15px;
+    margin: 0rem 1rem 1rem 0rem;
+    font-size: 1rem;
+}
+.box3inside1 h3, .box3inside2 h3, .box3inside3 h3
+{
+    color: var(--Soft-Pink);
+}
+.box3inside1 p, .box3inside2 p, .box3inside3 p
+{
+    margin: 2rem 2rem;
+    font-size: 1.3rem;
+}
+.box3inside1 img, .box3inside2 img, .box3inside3 img
+{
+    border-radius: 40px;
+}
+
+.imgandname
+{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-left: 2rem;
+}
+
+@media screen and (max-width: 1440px) {
+    
+
+
+    .box05
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .box1
+    {
+        margin: 0rem;
+        text-align: center;
+    }
+    .box1 h1
+    {
+        font-size: 3rem;
+    }
+    .box2
+    {
+        margin: 0rem;
+    }
+    .onestar, .twostar, .threestar
+    {
+        margin: 0rem;
+        justify-content: center;
+    }
+
+
+    .box3
+    {
+        display: flex;
+        flex-direction: column;
+        gap: 0rem;
+        margin: 0rem;
+    }
+
+
+}
